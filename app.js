@@ -19,7 +19,7 @@ const myMap = {
 
 
 const marker = L.marker(this.coordinates)
-marker.addTo(this.map).bindPopup('<p1><b>Your location</b></p1>').openPopup()
+marker.addTo(this.map).bindPopup('<p1><b>You Are Here</b></p1>').openPopup()
 
     },
 }
