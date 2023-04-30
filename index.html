@@ -21,11 +21,29 @@ crossorigin=""></script>
             height: 600px;
             background-color: #ccc;
         }
+        #map::before{
+        content: 'LOADING';
+        font-size: 3em;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        margin-top: 3em;
+    }
+    .leaflet-popup-content-wrapper {
+        width: 100%;
+    }
         
     </style>
     </head>
 <body>
-   
+    <form>
+        <select id="business">
+            <option value="restaurant">Restaurants</option>
+            <option value="coffee">Coffee Shops</option>
+            <option value="hotel">Hotels</option>
+            <option value="market">Markets</option>
+        </select>
+        <button id="submit">Submit</button>
     <div id="map"></div>
 </body>
 </html>
